@@ -1,0 +1,226 @@
+/* -------------------- body ------------------------*/
+/* Mengatur style untuk seluruh body halaman */
+body {
+    margin: 0;
+    /* Menghapus margin default */
+    background-image: url('https://i.pinimg.com/564x/1c/d3/4d/1cd34d2bc551e9267419733c0a5147a7.jpg');
+    /* Menambahkan gambar latar belakang */
+}
+
+/* -------------------- header ------------------------*/
+/* Mengatur style untuk elemen header */
+header {
+    top: 0;
+    /* Menempatkan header di atas halaman */
+    position: sticky;
+    /* Membuat header tetap berada di atas saat di-scroll */
+}
+
+/* Mengatur style untuk navbar */
+.navbar {
+    display: flex;
+    /* Menjadikan wadah fleksibel dan memungkinkan elemen anaknya (flex items) diatur dalam satu baris (secara default) atau kolom.*/
+    justify-content: space-between;
+    /* melakukan perataan dengan spasi yang sama di antara items */
+    align-items: center;
+    /* Menyelaraskan elemen secara vertikal (agar posisi nya ditengah) */
+    padding: 0 2vw;
+    /* mengatur ruang dalam, 0(atas. bawah) 2vw(kanan, kiri)=2% dari lebar viewport(Viewport Width) */
+    background-color: #1a1a1a;
+    /* Warna latar belakang gelap */
+}
+
+/* Mengatur style untuk logo dalam navbar */
+.logo img {
+    width: 100px;
+    /* Lebar gambar logo */
+}
+
+/* Mengatur style untuk elemen list dalam navigasi */
+.nav-menu ul {
+    display: flex;
+    /* Menjadikan wadah fleksibel dan memungkinkan elemen anaknya (flex items) diatur dalam satu baris (secara default) atau kolom.*/
+    flex-wrap: wrap;
+    /* Memungkinkan elemen untuk membungkus jika diperlukan */
+}
+
+.nav-menu ul {
+    li {
+        list-style: none;
+        /* Menghapus bullet list untuk link */
+    }
+
+    a {
+        text-decoration: none;
+        /* Menghapus garis bawah pada link */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* Font untuk link */
+        color: whitesmoke;
+        /* Warna teks item menu */
+        padding: 0 15px;
+        /* Padding horizontal untuk item menu */
+        font-size: 14px;
+        /* Ukuran font untuk item menu */
+        font-weight: bold;
+        /* Menebalkan teks item menu */
+    }
+}
+
+.nav-menu ul li a:hover {
+    color: rgb(230, 207, 150);
+    /* Warna teks saat di-hover */
+    cursor: pointer;
+    /* Mengubah kursor menjadi pointer saat hover */
+    text-decoration: underline;
+    /* Menambahkan garis bawah saat hover */
+}
+
+/* ------------------------------- mengatur content about -------------------------------- */
+/* Mengatur style untuk class about */
+.about {
+    height: 90vh;
+    /* Tinggi class about 90% dari viewport height(tinggi area web yang terlihat oleh user) */
+    display: flex;
+    /* Menjadikan wadah fleksibel dan memungkinkan elemen anaknya (flex items) diatur dalam satu baris (secara default) atau kolom.*/
+    justify-content: center;
+    /* melakukan perataan di tengah container */
+    align-items: center;
+    /* Menyelaraskan perataan item agar di tengah*/
+}
+
+/* Mengatur style untuk konten dalam class about */
+.about-content {
+    width: 600px;
+    /* Lebar konten about*/
+}
+
+/* Mengatur style untuk judul dalam about-content */
+.about-content h1 {
+    font-family: monospace;
+    /* Mengatur font elemen menjadi monospace*/
+    text-shadow: 3px 4px 4px rgb(228, 126, 8);
+    /* Bayangan teks untuk judul about flavorscape*/
+    color: whitesmoke;
+    /* Warna teks judul about flavorscape*/
+    font-size: 48px;
+    /* Ukuran font untuk judul about flavorscape*/
+    margin-bottom: 15px;
+    /* Margin bawah judul about flavorscape*/
+}
+
+/* Mengatur style untuk paragraf dalam about-content */
+.about-content p {
+    color: whitesmoke;
+    /* Warna teks paragraf */
+    font-size: 18px;
+    /* Ukuran font untuk paragraf */
+    margin-bottom: 50px;
+    /* Margin bawah paragraf */
+    margin-right: 30px;
+    /* Margin kanan paragraf */
+    text-align: justify;
+    /* perataan teks kanan kiri */
+}
+
+/* Mengatur style untuk gambar dalam about-image */
+.about-image img {
+    width: 350px;
+    /* Lebar gambar */
+    height: 350px;
+    /* Tinggi gambar */
+    border-radius: 180px;
+    /* Membuat gambar berbentuk lingkaran */
+    border: 5px solid whitesmoke;
+    /* Border gambar dengan warna putih */
+}
+
+/* ----------------------------- Mengatur style untuk content kritik & saran ------------------------------- */
+/* Mengatur style untuk container kritik & saran */
+.container-saran {
+    margin: 50px;
+    /* Margin di sekitar container */
+}
+
+/* Mengatur style untuk judul dalam container kritik & saran */
+.container-saran h1 {
+    text-shadow: 3px 5px 5px #000000;
+    /* Bayangan teks untuk judul */
+    color: rgb(197, 126, 102);
+    /* Warna teks judul */
+    font-size: 30px;
+    /* Ukuran font untuk judul */
+    text-align: center;
+    /* agar teks judul di tengah */
+}
+
+/* Mengatur style untuk form kotak */
+.kotak-form {
+    display: flex;
+    /* Menjadikan wadah fleksibel dan memungkinkan elemen anaknya (flex items) diatur dalam satu baris (secara default) atau kolom.*/
+    flex-direction: column;
+    /* elemen anak dari .kotak-form akan disusun secara vertikal, dari atas ke bawah */
+    gap: 10px;
+    /* Jarak antara elemen form */
+    margin: 40px;
+    /* Margin di sekitar form */
+}
+
+/* Mengatur style untuk input dan textarea dalam form kotak */
+.kotak-form input,
+.kotak-form textarea {
+    padding: 10px;
+    /* Padding di dalam input dan textarea */
+    border: none;
+    /* Menghapus border default */
+    border-radius: 5px;
+    /* Membulatkan sudut input dan textarea */
+}
+
+/* Mengatur style untuk tombol dalam form kotak */
+.kotak-form button {
+    font-family: monospace;
+    /* Mengatur font elemen menjadi monospace*/
+    padding: 10px;
+    /* memberikan ruang di dalam elemen */
+    border-radius: 5px;
+    /* Membulatkan sudut tombol */
+    background-color: rgb(108, 75, 47);
+    /* Warna latar belakang tombol */
+    color: #fff;
+    /* Warna teks tombol */
+}
+
+/* Mengatur style saat tombol di-hover */
+.kotak-form button:hover {
+    background-color: rgb(24, 24, 24);
+    /* Warna latar belakang tombol saat di hover */
+    cursor: pointer;
+    /* Mengubah kursor menjadi pointer saat di hover */
+}
+
+/* Mengatur style untuk label dalam form kotak */
+.kotak-form label {
+    color: rgb(214, 139, 114);
+    /* Warna teks label */
+    margin-bottom: 5px;
+    /* Margin bawah label */
+    font-weight: bold;
+    /* Menebalkan teks label */
+}
+
+/* ----------------------------- footer ------------------------------ */
+/* Mengatur style untuk footer */
+footer {
+    text-align: center;
+    /* Menyusun teks di tengah */
+    font-weight: bold;
+    /* Menebalkan teks */
+    color: #ffffff;
+    /* Warna teks */
+    font-size: 15px;
+    /* Ukuran font */
+    background-color: #1a1a1a;
+    /* Warna latar belakang gelap */
+    padding: 15px 0px;
+    /* memberikan ruang di dalam elemen */
+}

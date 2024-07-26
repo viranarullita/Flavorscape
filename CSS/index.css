@@ -1,0 +1,324 @@
+/* -------------------- body ------------------------*/
+/* Mengatur style untuk seluruh body halaman */
+body {
+    margin: 0;
+    /* Menghapus margin default */
+    background-color: #1a1a1a;
+    /* Warna latar belakang gelap */
+    color: #fff;
+    /* Warna teks putih */
+    text-align: center;
+    /* Menyusun teks di tengah */
+}
+
+/* -------------------- header ------------------------*/
+/* Mengatur style untuk elemen header */
+header {
+    top: 0;
+    /* Menempatkan header di atas halaman */
+    position: sticky;
+    /* Membuat header tetap berada di atas saat di-scroll */
+    z-index: 5;
+    /* Memastikan header berada di atas elemen lainnya */
+}
+
+/* Mengatur style untuk navbar */
+.navbar {
+    display: flex;
+    /* Menjadikan wadah fleksibel dan memungkinkan elemen anaknya (flex items) diatur dalam satu baris (secara default) atau kolom.*/
+    justify-content: space-between;
+    /* melakukan perataan dengan spasi yang sama di antara items */
+    align-items: center;
+    /* Menyelaraskan elemen secara vertikal (agar posisi nya ditengah) */
+    padding: 0 2vw;
+    /* mengatur ruang dalam, 0(atas. bawah) 2vw(kanan, kiri)=2% dari lebar viewport(Viewport Width) */
+    background-color: #1a1a1a;
+    /* Warna latar belakang gelap */
+}
+
+/* Mengatur style untuk logo dalam navbar */
+.logo img {
+    width: 100px;
+    /* Lebar gambar logo */
+}
+
+/* Mengatur style untuk elemen list dalam navigasi */
+.nav-menu ul {
+    display: flex;
+    /* Menjadikan wadah fleksibel dan memungkinkan elemen anaknya (flex items) diatur dalam satu baris (secara default) atau kolom.*/
+    flex-wrap: wrap;
+    /* Memungkinkan elemen untuk membungkus jika diperlukan */
+}
+
+.nav-menu ul {
+    li {
+        list-style: none;
+        /* Menghapus bullet list untuk link */
+    }
+
+    a {
+        text-decoration: none;
+        /* Menghapus garis bawah pada link */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* Font untuk link */
+        color: whitesmoke;
+        /* Warna teks item menu */
+        padding: 0 15px;
+        /* Padding horizontal untuk item menu */
+        font-size: 14px;
+        /* Ukuran font untuk item menu */
+        font-weight: bold;
+        /* Menebalkan teks item menu */
+    }
+}
+
+.nav-menu ul li a:hover {
+    color: rgb(230, 207, 150);
+    /* Warna teks saat di-hover */
+    cursor: pointer;
+    /* Mengubah kursor menjadi pointer saat hover */
+    text-decoration: underline;
+    /* Menambahkan garis bawah saat hover */
+}
+
+
+/* --------------------- content-1 ------------------------ */
+.home {
+    background-image: url(/image/bg.jpg);
+    /* Menambahkan gambar latar belakang */
+    background-size: cover;
+    /* Menutup gambar latar belakang ke seluruh area */
+    padding: 100px 190px;
+    /* memberikan ruang di dalam elemen */
+}
+
+.home-slider {
+    margin-bottom: 90px;
+    /* Margin bawah */
+}
+
+/* Mengatur style untuk judul di slider home */
+.home-slider h2 {
+    font-size: 40px;
+    /* Ukuran font untuk judul */
+    margin-bottom: 10px;
+    /* Margin bawah judul */
+    color: rgb(230, 207, 150);
+    /* Warna teks judul */
+    text-decoration: underline;
+    /* Menambahkan garis bawah pada judul */
+    text-decoration-color: rgb(253, 176, 34);
+    /* Warna garis bawah */
+}
+
+/* Mengatur style untuk paragraf di slider home */
+.home-slider p {
+    color: white;
+    /* Warna teks paragraf */
+    font-size: 16px;
+    /* Ukuran font untuk paragraf */
+    text-align: justify;
+    /* Meratakan kiri kanan teks paragraf */
+}
+
+/* Mengatur style untuk tombol */
+button {
+    box-shadow: 0px 4px 5px rgb(171, 97, 17);
+    /* Menambahkan bayangan pada tombol */
+    font-family: Georgia;
+    /* Mengatur font elemen menjadi georgia */
+    padding: 6px 20px;
+    /* memberikan ruang di dalam elemen */
+    font-size: 15px;
+    /* Menetapkan ukuran font untuk teks dalam tombol*/
+    background-color: rgb(188, 133, 74);
+    /* Menetapkan warna latar belakang tombol*/
+    color: white;
+    /* warna teks dalam tombol */
+    border: none;
+    /* Menghapus border default tombol */
+    border-radius: 5px;
+    /* Membulatkan sudut tombol */
+}
+
+/* Mengatur style saat tombol di-hover */
+button:hover {
+    transition: 0.3s;
+    /* Menambahkan transisi halus selama 0.3 detik*/
+    background-color: rgb(81, 81, 81);
+    /* Warna latar belakang tombol saat di-hover */
+    cursor: pointer;
+    /* Mengubah kursor menjadi pointer (tangan) saat di hover*/
+}
+
+
+/* -------------------------------- content-2 --------------------------- */
+/* Mengatur style untuk judul popular */
+.popular h1 {
+    text-shadow: 0 3px 6px rgb(253, 100, 34);
+    /* Bayangan teks */
+    font-size: 40px;
+    /* Ukuran font untuk judul */
+    color: #e2c044;
+    /* Warna teks judul */
+}
+
+/* Mengatur style untuk paragraf di section popular */
+.popular p {
+    margin-top: -15px;
+    /* Margin atas negatif */
+}
+
+/* Mengatur style untuk konten popular */
+.content-popular {
+    background-image: url(https://i.pinimg.com/564x/1f/ce/93/1fce9336b14e27939e7e706d27fd8ced.jpg);
+    /* Gambar latar belakang */
+    display: flex;
+    /* Menjadikan wadah fleksibel dan memungkinkan elemen anaknya (flex items) diatur dalam satu baris (secara default) atau kolom.*/
+    flex-wrap: wrap;
+    /* Memungkinkan elemen untuk dibungkus ke baris baru ketika ruang tidak cukup */
+    justify-content: center;
+    /* melakukan perataan di tengah container */
+    gap: 50px;
+    /* Jarak antara elemen */
+    padding: 70px;
+    /* memberikan ruang di dalam elemen */
+}
+
+/* Mengatur style untuk elemen menu */
+#menu-1,
+#menu-2,
+#menu-3 {
+    background-color: #454545;
+    /* Warna latar belakang elemen menu */
+    border-radius: 10px;
+    /* Membulatkan sudut elemen menu */
+    padding: 20px;
+    /* Padding di sekitar konten */
+}
+
+/* Mengatur style untuk gambar dalam elemen menu */
+#menu-1 img,
+#menu-2 img,
+#menu-3 img {
+    width: 200px;
+    /* Lebar gambar */
+    border-radius: 10px;
+    /* Membulatkan sudut gambar */
+}
+
+/* Mengatur style untuk judul dalam elemen menu */
+#menu-1 h3,
+#menu-2 h3,
+#menu-3 h3 {
+    font-size: 15px;
+    /* Ukuran font untuk judul */
+    margin-bottom: 30px;
+}
+
+/* Mengatur style untuk link dalam elemen menu */
+#menu-1 a,
+#menu-2 a,
+#menu-3 a {
+    color: #e2c044;
+    /* Warna teks link */
+    text-decoration: none;
+    /* Menghapus garis bawah pada link */
+}
+
+/* Mengatur style saat elemen menu di-hover */
+#menu-1:hover,
+#menu-2:hover,
+#menu-3:hover {
+    background-color: #835534;
+    /* Warna latar belakang saat di-hover */
+    transform: scale(1.2);
+    /* Membesarkan elemen saat di-hover */
+    transition: 0.3s;
+    /* Transisi halus */
+}
+
+
+/* --------------------------------------------------------------------------------- */
+/* Mengatur style untuk judul rekomendasi */
+.judul-recomend {
+    background-color: #a5434397;
+    /* Warna latar belakang */
+    color: whitesmoke;
+    /* Warna teks */
+    box-shadow: 0px 5px 8px #df894c;
+    /* Bayangan di sekitar elemen */
+}
+
+/* Mengatur style untuk judul rekomendasi */
+.judul-recomend h2 {
+    padding: 9px;
+    /* memberikan ruang di dalam elemen */
+}
+
+/* Mengatur style untuk konten di section rekomendasi */
+.content-recomend {
+    border-radius: 15px;
+    /* Membuat sudut elemen menjadi melengkung */
+    margin: 40px;
+    /* Memberikan jarak luar sekitar elemen sebesar 40px */
+    background-color: #a5434334;
+    /* Memberikan warna latar belakang */
+    display: flex;
+    /* Menjadikan wadah fleksibel dan memungkinkan elemen anaknya (flex items) diatur dalam satu baris (secara default) atau kolom.*/
+    align-items: center;
+    /* Menyelaraskan perataan item agar di tengah*/
+    padding: 4vw 7vw;
+    /* Memberikan ruang dalam elemen menggunakan unit lebar viewport (4% di atas/bawah, 7% di kiri/kanan) */
+}
+
+/* Mengatur style untuk gambar dalam konten rekomendasi */
+.content-recomend img {
+    padding-top: 20px;
+    /* Padding atas gambar */
+    border-radius: 50px;
+    /* Membulatkan sudut gambar */
+}
+
+/* Mengatur style untuk paragraf dalam konten rekomendasi */
+.content-recomend p {
+    padding: 0px 40px;
+    /* Memberikan ruang dalam elemen menggunakan unit lebar viewport (4% di atas/bawah, 7% di kiri/kanan) */
+    text-align: justify;
+    /* Meratakan kanan kiri teks paragraf */
+}
+
+#menu-4 {
+    h3 {
+        color: #8e8681;
+        /* Mengatur warna teks elemen <h3> */
+    }
+    a {
+        background-color: #87827f;
+        /* Mengatur warna latar belakang */
+        text-decoration: none;
+        /* Menghapus garis bawah */
+        padding: 4px 40px;
+        /* Menambahkan ruang di dalam <a>, 4px di atas dan bawah, 40px di kiri dan kanan */
+        border-radius: 5px;
+        /* Membuat sudut <a> melengkung */
+        color: #1a1a1a;
+        /* Mengatur warna teks <a> */
+    }
+    img {
+        width: 280px;
+        /* Mengatur lebar gambar */
+    }
+}
+
+
+/* ----------------------------- footer ------------------------------ */
+/* Mengatur style untuk footer */
+footer {
+    font-weight: bold;
+    /* Menebalkan teks */
+    font-size: 15px;
+    /* Ukuran font */
+    padding: 15px 0px;
+    /* memberikan ruang di dalam elemen */
+}

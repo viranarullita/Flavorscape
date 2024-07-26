@@ -1,0 +1,235 @@
+/* -------------------- body ------------------------*/
+/* Mengatur style untuk seluruh body halaman */
+body {
+    margin: 0;
+    /* Menghapus margin default */
+    background-image: url(https://i.pinimg.com/564x/d9/40/20/d940201d892dc4f18982bc3e22d17e41.jpg);
+    /* Menambahkan gambar latar belakang */
+}
+
+/* -------------------- header ------------------------*/
+/* Mengatur style untuk elemen header */
+header {
+    position: sticky;
+    /* Membuat header tetap berada di atas saat di-scroll */
+    z-index: 5;
+    /* Memastikan header berada di atas elemen lainnya */
+    top: 0;
+    /* Menempatkan header di atas halaman */
+}
+
+/* Mengatur style untuk navbar */
+.navbar {
+    display: flex;
+    /* Menjadikan wadah fleksibel dan memungkinkan elemen anaknya (flex items) diatur dalam satu baris (secara default) atau kolom.*/
+    justify-content: space-between;
+    /* melakukan perataan dengan spasi yang sama di antara items */
+    align-items: center;
+    /* Menyelaraskan elemen secara vertikal (agar posisi nya ditengah) */
+    padding: 0 2vw;
+    /* mengatur ruang dalam, 0(atas. bawah) 2vw(kanan, kiri)=2% dari lebar viewport(Viewport Width) */
+    background-color: #1a1a1a;
+    /* Warna latar belakang gelap */
+}
+
+/* Mengatur style untuk logo dalam navbar */
+.logo img {
+    width: 100px;
+    /* Lebar gambar logo */
+}
+
+/* Mengatur style untuk elemen list dalam navigasi */
+.nav-menu ul {
+    display: flex;
+    /* Menjadikan wadah fleksibel dan memungkinkan elemen anaknya (flex items) diatur dalam satu baris (secara default) atau kolom.*/
+    flex-wrap: wrap;
+    /* Memungkinkan elemen untuk membungkus jika diperlukan */
+}
+
+.nav-menu ul {
+    li {
+        list-style: none;
+        /* Menghapus bullet list untuk link */
+    }
+
+    a {
+        text-decoration: none;
+        /* Menghapus garis bawah pada link */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* Font untuk link */
+        color: whitesmoke;
+        /* Warna teks item menu */
+        padding: 0 15px;
+        /* Padding horizontal untuk item menu */
+        font-size: 14px;
+        /* Ukuran font untuk item menu */
+        font-weight: bold;
+        /* Menebalkan teks item menu */
+    }
+}
+
+.nav-menu ul li a:hover {
+    color: rgb(230, 207, 150);
+    /* Warna teks saat di-hover */
+    cursor: pointer;
+    /* Mengubah kursor menjadi pointer saat di hover */
+    text-decoration: underline;
+    /* Menambahkan garis bawah saat di hover */
+}
+
+
+/* ------------------------ recipes ------------------------ */
+.daftar-makanan h2 {
+    font-size: 30px;
+    /* Ukuran font untuk .daftar-makanan h2  */
+    text-transform: uppercase;
+    /* Mengubah semua teks di elemen ini menjadi huruf kapital */
+    text-shadow: 0px 2px 3px rgb(225, 70, 4);
+    /* Menambahkan bayangan pada teks */
+    background-color: #83838285;
+    /* Warna latar belakang elemen h2  */
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.922);
+    /* Memberikan efek bayangan pada elemen h2 */
+    text-align: center;
+    /* Menyelaraskan teks supay di tengah */
+    padding: 7px;
+    /* Menambahkan ruang dalam elemen h2 sebesar 7px di semua sisi, memberi jarak antara teks dan batas elemen */
+}
+
+#makanan-list {
+    display: flex;
+    /* Menjadikan wadah fleksibel dan memungkinkan elemen anaknya (flex items) diatur dalam satu baris (secara default) atau kolom.*/
+    flex-wrap: wrap;
+    /* Memungkinkan elemen untuk dibungkus ke baris baru ketika ruang tidak cukup */
+    justify-content: center;
+    /* melakukan perataan di tengah */
+}
+
+/* Menambahkan gaya untuk elemen makanan */
+.meal {
+    background-color: #ffffff7d;
+    /* Warna latar belakang */
+    border: 1px solid #ccc;
+    /* Border elemen makanan */
+    border-radius: 8px;
+    /* Sudut membulat */
+    box-shadow: 0 5px 5px rgb(102, 54, 37);
+    /* Bayangan elemen makanan */
+    margin: 10px;
+    /* memberikan ruang di luar elemen */
+    padding: 20px;
+    /* memberikan ruang di dalam elemen */
+    text-align: center;
+    /* Menyusun teks di tengah */
+    width: 250px;
+    /* Lebar elemen makanan */
+}
+
+.meal {
+    img {
+        border-radius: 8px;
+        /* Sudut membulat pada gambar */
+        max-width: 100%;
+        /* Memastikan gambar tidak melebihi lebar elemen */
+    }
+
+    /* Menambahkan gaya untuk judul makanan */
+    h3 {
+        font-size: 18px;
+        /* Ukuran font untuk judul makanan */
+    }
+
+    /* Gaya untuk tombol dalam elemen makanan */
+    button {
+        background-color: #bf6c53;
+        /* Warna latar belakang tombol */
+        border: none;
+        /* Menghilangkan border tombol */
+        border-radius: 4px;
+        /* Sudut membulat pada tombol */
+        color: #fff;
+        /* Warna teks tombol */
+        padding: 10px 20px;
+        /* memberikan ruang di dalam*/
+    }
+}
+
+/* Efek hover untuk tombol elemen makanan */
+.meal button:hover {
+    background-color: #585756;
+    /* Warna latar belakang tombol pada hover */
+    cursor: pointer;
+    /* Menunjukkan pointer pada hover */
+}
+
+/* ------------------------------------------------------------------ */
+.detail-makanan {
+    background-color: #cccccc5a;
+    /* Warna latar belakang elemen detail makanan dengan transparansi */
+}
+
+.detail-makanan h2 {
+    text-align: center;
+    /* Menyelaraskan teks di tengah elemen h2 */
+    background-color: #845947;
+    /* Warna latar belakang elemen h2 */
+    color: #000000;
+    /* Mengatur warna teks agar kontras dengan latar belakang */
+    box-shadow: 0px 5px 4px rgb(113, 50, 11);
+    /* Efek bayangan pada elemen h2 */
+    padding: 10px;
+    /* memberikan ruang di dalam*/
+}
+
+#makanan-info {
+    margin: 20px auto;
+    /* Margin vertikal 20px dan margin otomatis di kiri dan kanan untuk penyusunan di tengah */
+    width: 100%;
+    /* Memastikan lebar elemen menyesuaikan dengan lebar kontainer induk */
+    display: flex;
+    /* Menjadikan wadah fleksibel dan memungkinkan elemen anaknya (flex items) diatur dalam satu baris (secara default) atau kolom.*/
+    flex-direction: column;
+    /* mengatur arah item fleksibel dalam container(arah item dari atas ke bawah) */
+    align-items: center;
+    /* Rata tengah elemen di dalam kontainer */
+}
+
+#makanan-info img {
+    width: 300px;
+    /* lebar gambar */
+    border-radius: 50%;
+    /* Menjadikan gambar bulat penuh */
+}
+
+#makanan-info p {
+    max-width: 100%;
+    /* Membatasi lebar elemen p agar tidak melebihi lebar kontainer */
+    padding: 0 30px;
+    /* Ruang di kiri dan kanan untuk kenyamanan membaca */
+    box-sizing: border-box;
+    /* Menghindari overflow dengan memasukkan padding ke dalam lebar total */
+    line-height: 1.6;
+    /* Jarak antar baris untuk keterbacaan */
+}
+
+#makanan-info h3 {
+    text-align: center;
+    /* Tengah-tengah teks */
+}
+
+/* ---------------------- footer ------------------------ */
+/* Mengatur style untuk footer */
+footer {
+    text-align: center;
+    /* Menyusun teks di tengah */
+    font-weight: bold;
+    /* Menebalkan teks */
+    color: #ffffff;
+    /* Warna teks */
+    font-size: 15px;
+    /* Ukuran font */
+    background-color: #1a1a1a;
+    /* Warna latar belakang gelap */
+    padding: 15px 0px;
+    /* memberikan ruang di dalam elemen */
+}

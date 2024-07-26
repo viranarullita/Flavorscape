@@ -1,0 +1,248 @@
+/* -------------------- body ------------------------*/
+/* Mengatur style untuk seluruh body halaman */
+body {
+    margin: 0;
+    /* Menghapus margin default */
+    background-color: #424242;
+    /* Warna latar belakang abu-abu gelap */
+}
+
+
+/* -------------------- header ------------------------*/
+/* Mengatur style untuk elemen header */
+header {
+    position: sticky;
+    /* Membuat header tetap berada di atas saat di-scroll */
+    z-index: 5;
+    /* Memastikan header berada di atas elemen lainnya */
+    top: 0;
+    /* Menempatkan header di atas halaman */
+}
+
+/* Mengatur style untuk navbar */
+.navbar {
+    display: flex;
+    /* Menjadikan wadah fleksibel dan memungkinkan elemen anaknya (flex items) diatur dalam satu baris (secara default) atau kolom.*/
+    justify-content: space-between;
+    /* melakukan perataan dengan spasi yang sama di antara items */
+    align-items: center;
+    /* Menyelaraskan elemen secara vertikal (agar posisi nya ditengah) */
+    padding: 0 2vw;
+    /* mengatur ruang dalam, 0(atas. bawah) 2vw(kanan, kiri)=2% dari lebar viewport(Viewport Width) */
+    background-color: #1a1a1a;
+    /* Warna latar belakang gelap */
+}
+
+/* Mengatur style untuk logo dalam navbar */
+.logo img {
+    width: 100px;
+    /* Lebar gambar logo */
+}
+
+/* Mengatur style untuk elemen list dalam navigasi */
+.nav-menu ul {
+    display: flex;
+    /* Menjadikan wadah fleksibel dan memungkinkan elemen anaknya (flex items) diatur dalam satu baris (secara default) atau kolom.*/
+    flex-wrap: wrap;
+    /* Memungkinkan elemen untuk membungkus jika diperlukan */
+}
+
+.nav-menu ul {
+    li {
+        list-style: none;
+        /* Menghapus bullet list untuk link */
+    }
+
+    a {
+        text-decoration: none;
+        /* Menghapus garis bawah pada link */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* Font untuk link */
+        color: whitesmoke;
+        /* Warna teks item menu */
+        padding: 0 15px;
+        /* Padding horizontal untuk item menu */
+        font-size: 14px;
+        /* Ukuran font untuk item menu */
+        font-weight: bold;
+        /* Menebalkan teks item menu */
+    }
+}
+
+.nav-menu ul li a:hover {
+    color: rgb(230, 207, 150);
+    /* Warna teks saat di-hover */
+    cursor: pointer;
+    /* Mengubah kursor menjadi pointer saat di hover */
+    text-decoration: underline;
+    /* Menambahkan garis bawah saat di hover */
+}
+
+
+/* --------------------- Mengatur style untuk content-1 ----------------------- */
+/* Mengatur style untuk elemen .content-1 */
+.content-1 {
+    text-align: center;
+    /* Menyusun teks di tengah */
+    margin: 8vw;
+}
+
+/* Mengatur style untuk elemen section */
+.content-1 h1 {
+    color: white;
+    /* Warna teks judul .content-1 */
+    text-shadow: 1px 5px 5px black;
+    /* Bayangan teks untuk judul tutorial videos */
+    font-size: 40px;
+    /* Ukuran font untuk judul .content-1 */
+}
+
+.content-1 p {
+    margin-top: -20px;
+    /* Margin atas untuk paragraf */
+    color: white;
+    /* Warna teks paragraf */
+    font-size: 18px;
+    /* Ukuran font untuk paragraf */
+}
+
+/* Mengatur style untuk container GIF */
+.gif-container {
+    margin-top: 10px;
+    /* Margin atas untuk container GIF */
+}
+
+/* Mengatur style untuk gambar GIF di dalam container */
+.gif-container img {
+    width: 500px;
+    /* Lebar gambar GIF */
+}
+
+
+/* ------------------------------------------------------------------------ */
+/* Mengatur style untuk container */
+.container {
+    width: 90%;
+    /* Lebar container 90% dari lebar elemen induk (viewport) */
+    margin: auto;
+    /* untuk memusatkan elemen secara horizontal, akan diposisikan ditengah */
+    margin-bottom: 100px;
+    /* Margin bawah untuk container */
+    padding: 30px;
+    /* memberikan ruang di dalam elemen */
+    background-color: #7a6155;
+    /* Warna latar belakang container */
+    border-radius: 8px;
+    /* Membulatkan sudut container */
+    display: flex;
+    /* Menjadikan wadah fleksibel dan memungkinkan elemen anaknya (flex items) diatur dalam satu baris (secara default) atau kolom.*/
+    flex-wrap: wrap;
+    /* Memungkinkan elemen untuk dibungkus ke baris baru ketika ruang tidak cukup */
+    justify-content: space-around;
+    /* melakukan perataan dengan spasi seperempat dari item */
+}
+
+/* Mengatur style untuk setiap item makanan */
+.menu {
+    height: 180px;
+    /* Tinggi kotak item makanan */
+    width: 200px;
+    /* Lebar kotak item makanan */
+    padding: 15px;
+    /* memberikan ruang di dalam elemen */
+    background-color: #adadad;
+    /* Warna latar belakang item makanan */
+    border-radius: 15px;
+    /* Membulatkan sudut item makanan */
+    box-shadow: 0 4px 5px rgb(122, 57, 0);
+    /* Bayangan untuk item makanan */
+    text-align: center;
+    /* Menyelaraskan agar posisi foto dan teks di tengah */
+    position: relative;
+    /* memindahkan elemen ke dimensi yang berbeda*/
+    padding-top: 60px;
+    /* Padding atas untuk gambar */
+    margin-top: 120px;
+    /* Margin atas untuk item makanan */
+}
+
+/* Mengatur style untuk judul makanan dalam item makanan */
+.menu h4 {
+    font-size: 15px;
+    /* Ukuran font judul makanan */
+    font-weight: bold;
+    /* Menebalkan teks judul makanan */
+    margin-top: 50px;
+    /* Margin atas untuk judul makanan */
+    margin-bottom: 50px;
+    /* Margin bawah untuk judul makanan */
+    color: #000000;
+    /* Warna teks judul makanan */
+}
+
+/* Mengatur style untuk gambar makanan dalam item makanan */
+.menu img {
+    width: 180px;
+    /* Lebar gambar makanan */
+    height: 180px;
+    /* Tinggi gambar makanan */
+    border-radius: 50%;
+    /* Membuat gambar menjadi bulat */
+    position: absolute;
+    /* diposisikan relatif terhadap parent terdekatnya (non static) */
+    top: -100px;
+    /* Mengatur gambar keluar ke atas dari item */
+    transform: translateX(-50%);
+    /* memindahkan elemen pada sumbu horizontal (X) ke kiri*/
+    /* transform, memungkinkan pergeseran, rotasi, skala, atau kemiringan pd elemen*/
+    border: 5px solid #757575;
+    /* Border putih pada gambar makanan */
+}
+
+/* Efek hover pada item makanan */
+.menu:hover {
+    transition: 0.2s;
+    /* Transisi secara halus selama 0.2 detik */
+    transform: translateY(-15px);
+    /* menggerakkan elemen ke atas saat di hover sebesar 15px. */
+    background-color: #d8a681;
+    /* Mengubah warna latar belakang saat di-hover */
+}
+
+/* Mengatur style untuk link YouTube dalam item makanan */
+.youtube-link {
+    padding: 10px 20px;
+    /* Ruang dalam tombol link */
+    background-color: #cd754c;
+    /* Warna latar belakang tombol link */
+    color: #fff;
+    /* Warna teks tombol link */
+    text-decoration: none;
+    /* Menghilangkan dekorasi tautan */
+    border-radius: 20px;
+    /* Sudut bulat pada tombol link */
+}
+
+/* Efek hover pada link YouTube */
+.youtube-link:hover {
+    background-color: #676767;
+    /* Warna latar belakang tombol link saat di-hover */
+}
+
+
+/* ----------------------------- footer ------------------------------ */
+/* Mengatur style untuk footer */
+footer {
+    text-align: center;
+    /* Menyusun teks di tengah */
+    font-weight: bold;
+    /* Menebalkan teks */
+    color: #ffffff;
+    /* Warna teks */
+    font-size: 15px;
+    /* Ukuran font */
+    background-color: #1a1a1a;
+    /* Warna latar belakang gelap */
+    padding: 15px 0px;
+    /* memberikan ruang di dalam elemen */
+}

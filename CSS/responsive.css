@@ -1,0 +1,361 @@
+/* ------------- Responsif for max-width (2560px) -----------------*/
+@media (max-width:2560px) {
+    /* ====== recipes ====== */
+    .detail-makanan {
+        margin: 95px;
+    }
+}
+
+
+/* ------------- Responsif for max-width (1024px) -----------------*/
+@media (max-width:1024px) {
+    /* ===== video ===== */
+    #meal-video {
+        width: 90%;
+    }
+
+    #meal-video img {
+        width: 220px;
+        height: auto;
+    }
+
+    .menu {
+        width: 255px;
+        height: 200px;
+    }
+
+    .menu {
+        h4 {
+            font-size: 20px;
+            margin-top: 85px;
+            margin-bottom: 50px;
+        }
+
+        a {
+            font-size: 15px;
+        }
+    }
+}
+
+
+/* ------------- Responsif for max-width (768px) -----------------*/
+@media (max-width:768px) {
+    /* ======== home ======== */
+    .home {
+        padding: 60px 70px;
+    }
+
+    .content-recomend {
+        flex-direction: column;
+    }
+
+    .content-recomend p {
+        padding: 15px 5px;
+    }
+
+    /* ======== video ======= */
+    #meal-video {
+        width: 80%;
+    }
+
+    /* ======= recipes ======= */
+    .detail-makanan {
+        margin: 45px;
+    }
+
+    /* ========= about ======== */
+    .about-content {
+        width: 400px;
+    }
+
+    .about-content {
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            font-size: 15px;
+            margin-right: 20px;
+            margin-left: 20px;
+            text-align: justify;
+        }
+    }
+
+    .about-image img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+/* ------------- Responsif for max-width (450px) -----------------*/
+@media (max-width: 450px) {
+    /* ============= home ============= */
+    .logo img {
+        width: 65px;
+    }
+
+    .nav-menu ul li a {
+        font-size: 11px;
+        padding: 10px 10px;
+    }
+
+    .home {
+        padding: 20px 30px;
+    }
+
+    .home-slider {
+        h2 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    /* -------------------------------- */
+    .popular {
+        h1 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 12px;
+            padding: 5px 0px;
+        }
+    }
+
+    /* ------------------------------- */
+    .judul-recomend {
+        font-size: 12px;
+    }
+
+    #menu-4 img {
+        width: 250px;
+    }
+
+    .content-recomend p {
+        margin: 10px -10px;
+    }
+
+    /* =========== recipes ========== */
+    .detail-makanan {
+        margin: 20px;
+        border-radius: 10px;
+    }
+
+    #makanan-info {
+        img {
+            width: 200px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    /* =========== video =========== */
+    .gif-container img {
+        width: 250px;
+    }
+
+    .content-1 {
+        p {
+            margin-left: 40px;
+            margin-right: 40px;
+            font-size: 15px;
+        }
+    }
+
+    #meal-video {
+        width: 280px;
+    }
+
+    /* ========== about =========== */
+    .about {
+        flex-direction: column;
+    }
+
+    .about-content {
+        width: 350px;
+    }
+
+    .about-content h1 {
+        padding-top: 70px;
+        font-size: 33px;
+    }
+
+    .container-saran {
+        margin-top: 120px;
+    }
+
+    .container-saran h1 {
+        font-size: 24px;
+    }
+
+    .kotak-form {
+        margin: 20px;
+    }
+
+    /* ========== footer ========= */
+    footer {
+        font-size: 12px;
+    }
+}
+
+
+/* ------------- Responsif for max-width (320px) -----------------*/
+@media (max-width: 320px) {
+    /* ========= home ========= */
+    .logo img {
+        width: 60px;
+    }
+
+    .nav-menu ul li a {
+        font-size: 9px;
+    }
+
+    .home {
+        padding: 20px 20px;
+    }
+
+    .home-slider h2 {
+        font-size: 24px;
+    }
+
+    .home-slider p {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    /* -------------------------------------------- */
+    .popular {
+        p {
+            font-size: 10px;
+        }
+
+        .content-popular {
+            padding: 25px;
+        }
+    }
+
+    #menu-1,
+    #menu-2,
+    #menu-3 {
+        img {
+            width: 140px;
+        }
+    }
+
+    #menu-4 img {
+        width: 200px;
+    }
+
+    .content-recomend {
+        h3 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    /* ============ recipes =========== */
+    .container-kategori h2 {
+        font-size: 20px;
+    }
+
+    #category-list h3 {
+        font-size: 15px;
+    }
+
+    /* ============= video ============= */
+    .gif-container img {
+        width: 270px;
+    }
+
+    .content-1 {
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 13px;
+        }
+    }
+
+    #meal-video {
+        width: 230px;
+    }
+
+    #meal-video img {
+        width: 150px;
+        height: auto;
+    }
+
+    .menu {
+        width: 160px;
+        height: 110px;
+    }
+
+    .menu {
+        h4 {
+            margin-top: 15px;
+            margin-bottom: 35px;
+        }
+
+        a {
+            font-size: 13px;
+        }
+    }
+
+    /* ========= About ======== */
+    .about-content {
+        width: 300px;
+    }
+
+    .about-content h1 {
+        padding-top: 20px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .about-content p {
+        font-size: 12px;
+        margin-right: 20px;
+        margin-left: 20px;
+        text-align: justify;
+    }
+
+    .about-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .container-saran {
+        margin-top: 50px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    /* =========== footer =========== */
+    footer {
+        font-size: 10px;
+    }
+}

@@ -191,3 +191,24 @@ function tampil4() {
 }
 // Memanggil fungsi tampil4
 tampil4();
+
+
+//======= scroll ======//
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+// Tampilkan tombol saat scroll ke bawah
+window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollTopBtn.style.display = "block";
+    } else {
+        scrollTopBtn.style.display = "none";
+    }
+};
+
+// Fungsi untuk scroll ke atas
+scrollTopBtn.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};

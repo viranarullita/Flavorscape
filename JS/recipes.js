@@ -105,6 +105,9 @@ function ambilDetailMakanan(mealID) {
                 // Membuat dan menambahkan elemen bahan ke dalam daftar bahan
                 buatElemenBahan(bahan[i]);
             }
+
+            //scroll otomatis
+            document.querySelector('.detail-makanan').scrollIntoView({ behavior: 'smooth' });
         })
         // Menangani error jika ada masalah selama proses pengambilan data
         .catch(error => {
@@ -147,3 +150,23 @@ function buatElemenBahan(bahan) {
 
 // Memanggil ambilMakanan untuk memuat makanan dari kategori Beef saat halaman dimuat
 ambilMakanan(); 
+
+//======= scroll ======//
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+// Tampilkan tombol saat scroll ke bawah
+window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollTopBtn.style.display = "block";
+    } else {
+        scrollTopBtn.style.display = "none";
+    }
+};
+
+// Fungsi untuk scroll ke atas
+scrollTopBtn.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};

@@ -312,6 +312,31 @@ button:hover {
 }
 
 
+/* ======================== scroll halaman ke paling atas ======================== */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  background: linear-gradient(135deg, #7e5bef, #67d3f0);
+  border: none;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  transition: all 0.3s ease;
+
+  /* tambahan untuk memposisikan ikon di tengah */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
 /* ----------------------------- footer ------------------------------ */
 /* Mengatur style untuk footer */
 footer {
